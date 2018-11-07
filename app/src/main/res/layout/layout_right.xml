@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintRight_toRightOf="parent">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="@id/guide1"
+        app:layout_constraintTop_toTopOf="@id/guide2">
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/shape_round">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/shape_circle">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/star">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="文本文本文本文本文本文本文本文本文本文本文本文本" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/star_fill">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="文本文本文本文本文本文本文本文本文本文本文本文本" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/guide1"
+        app:layout_constraintTop_toTopOf="@id/guide2">
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/shape_round">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/shape_circle">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/star">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+        <com.angcyo.masklayout.MaskLayout
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_marginTop="10dp"
+            app:xhg_mask_drawable="@drawable/star_fill">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </com.angcyo.masklayout.MaskLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
